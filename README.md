@@ -1,1 +1,19 @@
-Hello world!
+# Project Donder
+
+## Overview
+This project aims to create a simple tournament system for osu!taiko alongside a discord bot to facilitate match scheduling and bracketing.
+
+## Planned Features
+- Tournament creation and management
+- Match scheduling
+- Bracket generation
+- Discord bot integration
+- Integration with osu! API
+
+## Tech Stack
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Flask (Python)
+- **Database**: MongoDB (Python)
+- **Testing**: pytest
+- **Discord Bot Framework**: discord.py
+- **osu! API Wrapper**: osu.py
