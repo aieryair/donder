@@ -9,7 +9,7 @@
 1. **Fork the repository**: Click the "Fork" button at the top right of the repository page.
 2. **Clone your fork**: Use the following command to clone your fork to your local machine:
     ```bash
-    git clone https://github.com/aieryair/donder.git
+    git clone https://github.com/<your-username>/<project-name>.git
     ```
 
 ### Prerequisites
