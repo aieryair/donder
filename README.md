@@ -10,10 +10,10 @@ This project aims to create a simple tournament system for osu!taiko alongside a
 - Discord bot integration
 - Integration with osu! API
 
-## Tech Stack
+## Planned Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
 - **Database**: MongoDB (Python)
 - **Testing**: pytest
-- **Discord Bot Framework**: discord.py
+- **Discord Bot Framework**: nextcord
 - **osu! API Wrapper**: osu.py
