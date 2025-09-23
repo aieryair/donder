@@ -1,16 +1,4 @@
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Submitting Pull Requests](#submitting-pull-requests)
-- [Reporting Issues](#reporting-issues)
-
 ## Getting Started
-
-1. **Fork the repository**: Click the "Fork" button at the top right of the repository page.
-2. **Clone your fork**: Use the following command to clone your fork to your local machine:
-    ```bash
-    git clone https://github.com/<your-username>/<project-name>.git
-    ```
 
 ### Prerequisites
 1. Git
@@ -46,31 +34,3 @@
     ```bash
     wget -q0 - https://www.mongodb.org/static/pg
     ```
-
-## Submitting Pull Requests
-
-1. **Create a new branch**: Use a descriptive name for your branch.
-    ```bash
-    git checkout -b <your-branch>/<your-branch-name>
-    ```
-
-2. **Make your changes**: Implement your changes.
-
-3. **Commit your changes**: Write a clear commit message.
-    ```bash
-    git commit -m "Made these changes for these reasons."
-    ```
-
-4. **Push to your fork**: Push your changes to your repository.
-    ```bash
-    git push origin <your-branch>/<your-branch-name>
-    ```
-
-5. **Open a pull request**: Go to the original repository and click on "New Pull Request".
-
-## Reporting Issues 
-
-When reporting an issue, please include:
-- A clear and descriptive title.
-- Steps to reproduce the issue.
-- Any relevant screenshots or logs.
