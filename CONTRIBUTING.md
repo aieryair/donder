@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [How to Contribute](#how-to-contribute)
 - [Submitting Pull Requests](#submitting-pull-requests)
 - [Reporting Issues](#reporting-issues)
 
@@ -26,7 +25,8 @@
 
 ### Installing Python
 
-- **Windows**: Download the installer from [python.org](https://www.python.org/downloads/windows/) and follow the installation instructions. **Make sure to check the box to add Python to your PATH**.
+- **Windows**: Download the installer from [python.org](https://www.python.org/downloads/windows/) and follow the installation instructions.
+**Make sure to check the box to add Python to your PATH**.
 
 - **Linux**: Use your package manager to install Python. For example on Ubuntu/Debian, run:
     ```bash
@@ -65,3 +65,8 @@
 5. **Open a pull request**: Go to the original repository and click on "New Pull Request".
 
 ## Reporting Issues 
+
+When reporting an issue, please include:
+- A clear and descriptive title.
+- Steps to reproduce the issue.
+- Any relevant screenshots or logs.
