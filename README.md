@@ -13,7 +13,7 @@ This project aims to create a simple tournament system for osu!taiko alongside a
 ## Planned Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
-- **Database**: MongoDB (Python)
+- **Database**: SQLite
 - **Testing**: pytest
 - **Discord Bot Framework**: nextcord
 - **osu! API Wrapper**: osu.py
