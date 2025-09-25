@@ -1,4 +1,6 @@
 .env
+*.db
 donder-server/.venv/
-.venv/
-.db
+__pycache__/
+*.pyc
+.vscode/
