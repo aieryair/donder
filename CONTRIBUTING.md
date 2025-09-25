@@ -3,7 +3,6 @@
 ### Prerequisites
 1. Git
 2. Python
-3. SQLite
 
 ### Installing Git
 
@@ -23,17 +22,4 @@
     ```bash
     sudo apt update
     sudo apt install python3
-    ```
-
-### Installing SQLite
-
-- **Linux**: Use your package manager to install SQLite. For example on Ubuntu.Debian, run:
-    ```bash
-    sudo apt update
-    sudo apt install sqlite3
-    sudo apt install libsqlite3-dev
-    ```
-    Verify your SQLite installation by running (It should output the SQLite version number):
-    ```bash
-    sqlite3 --version
     ```
