@@ -23,3 +23,20 @@
     sudo apt update
     sudo apt install python3
     ```
+
+### Installing Flask
+Make sure to activate .venv before running pip. Install required packages using ``` pip install ```
+
+**Windows**
+```
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+**Linux**
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
