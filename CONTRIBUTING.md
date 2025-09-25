@@ -3,7 +3,7 @@
 ### Prerequisites
 1. Git
 2. Python
-3. MongoDB
+3. SQLite
 
 ### Installing Git
 
@@ -17,8 +17,7 @@
 
 ### Installing Python
 
-- **Windows**: Download the installer from [python.org](https://www.python.org/downloads/windows/) and follow the installation instructions.
-**Make sure to check the box to add Python to your PATH**.
+- **Windows**: Download the installer from [python.org](https://www.python.org/downloads/windows/) and follow the installation instructions. **Please make sure to check the box to add Python to your PATH**.
 
 - **Linux**: Use your package manager to install Python. For example on Ubuntu/Debian, run:
     ```bash
@@ -26,11 +25,15 @@
     sudo apt install python3
     ```
 
-### Installing MongoDB
+### Installing SQLite
 
-- **Windows**: Download the installer from [mongodb.com](https://mongodb.com/try/download/community) and follow the installation instructions. Make sure to set up the MongoDB service.
-
-- **Linux**: Follow the official MongoDB installation guide for your specific distribution. For example, on Ubuntu you can run: 
+- **Linux**: Use your package manager to install SQLite. For example on Ubuntu.Debian, run:
     ```bash
-    wget -q0 - https://www.mongodb.org/static/pg
+    sudo apt update
+    sudo apt install sqlite3
+    sudo apt install libsqlite3-dev
+    ```
+    Verify your SQLite installation by running (It should output the SQLite version number):
+    ```bash
+    sqlite3 --version
     ```
