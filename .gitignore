@@ -1,3 +1,4 @@
 .env
 donder-server/.venv/
 .venv/
+.db
