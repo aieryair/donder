@@ -8,7 +8,7 @@ def create_tournament(name, format, created_by):
     cursor = connect.cursor();
     cursor.execute('''
     INSERT INTO tournaments (name, format, created_by) VALUES (?, ?, ?)
-                   ''', (name, format))
+                   ''', (name, format, created_by))
     connect.commit()
     connect.close()
     print(f"Tournament '{name}' created by {created_by}.")
