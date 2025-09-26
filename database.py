@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS tournaments (
                 id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                 name VARCHAR(50) NOT NULL,
                 format VARCHAR(50),
-                created_by varchar(50)
+                created_by varchar(50),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
 ''')
