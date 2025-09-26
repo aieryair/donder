@@ -4,3 +4,4 @@ donder-server/.venv/
 __pycache__/
 *.pyc
 .vscode/
+instance/
