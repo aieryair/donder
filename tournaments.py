@@ -36,3 +36,11 @@ def delete_tournament(tournament_id):
     connect.commit()
     connect.close()
     print(f"Tournament {name} (ID {tournament_id}) deleted.")
+
+def show_tournaments():
+    connect = connect.db()
+    cursor = connect.cursor()
+    cursor.execute('SELECT * FROM tournaments')
+    tournaments = cursor.fetchall()
+    connect.close()
+    return tournaments
