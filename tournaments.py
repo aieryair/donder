@@ -3,15 +3,15 @@ import sqlite3
 def connect_db():
     return sqlite3.connect('database.db')
 
-def create_tournament(name, format):
+def create_tournament(name, format, created_by):
     connect = connect_db();
     cursor = connect.cursor();
     cursor.execute('''
-    INSERT INTO tournaments (name, format) VALUES (?, ?)
+    INSERT INTO tournaments (name, format, created_by) VALUES (?, ?, ?)
                    ''', (name, format))
     connect.commit()
     connect.close()
-    print(f"Tournament '{name}' created.")
+    print(f"Tournament '{name}' created by {created_by}.")
 
 def edit_tournament(tournament_id, name=None, format=None):
     connect = connect_db();
