@@ -26,3 +26,13 @@ def edit_tournament(tournament_id, name=None, format=None):
     connect.commit()
     connect.close()
     print (f"Tournament {name} (ID: {tournament_id}) updated.") 
+
+def delete_tournament(tournament_id):
+    connect = connect_db()
+    cursor = connect.cursor()
+    cursor.execute('''
+    DELETE FROM tournaments WHERE id = ?
+                   ''', (tournament_id))
+    connect.commit()
+    connect.close()
+    print(f"Tournament {name} (ID {tournament_id}) deleted.")
