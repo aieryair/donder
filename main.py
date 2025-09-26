@@ -10,3 +10,19 @@ def create_tournament(name, format):
     tournaments = cursor.fetchall()
     connect.close()
     print(f"Tournament '{name}' created.")
+
+def edit_tournament(tournament_id, name=None, format=None):
+    connect = connect_db();
+    cursor = connect.cursor();
+    if name: 
+        cursor.execute('''
+        UPDATE tournaments SET name = ? WHERE id = ?
+                       ''', (name, tournament_id))
+    
+    if format: 
+        cursor.execute('''
+        UPDATE tournaments SET format = ? WHERE id = ?
+                       ''', (format, tournament_id))
+    connect.commit()
+    connect.close()
+    print (f"Tournament {name} (ID: {tournament_id}) updated.")
