@@ -6,8 +6,10 @@ def connect_db():
 def create_tournament(name, format):
     connect = connect_db();
     cursor = connect.cursor();
-    cursor.execute('SELECT * FROM tournaments')
-    tournaments = cursor.fetchall()
+    cursor.execute('''
+    INSERT INTO tournaments (name, format) VALUES (?, ?)
+                   ''', (name, format))
+    connect.commit()
     connect.close()
     print(f"Tournament '{name}' created.")
 
